@@ -1,0 +1,24 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Shadow Layer -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#35000000"/>
+            <size android:width="70dp"
+                android:height="70dp"/>
+        </shape>
+    </item>
+
+    <!-- Main Circle -->
+    <item
+        android:left="1.5dp"
+        android:top="0.5dp"
+        android:right="1.5dp"
+        android:bottom="2dp">
+
+        <shape android:shape="oval">
+            <solid android:color="@color/bg_252525"/>
+        </shape>
+    </item>
+
+</layer-list>

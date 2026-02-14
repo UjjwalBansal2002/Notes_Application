@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bg_grey"
+        android:padding="16dp"
+        android:src="@drawable/ic_back"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="@string/notes"
+        android:id="@+id/tvHeading"
+        android:textColor="@color/white"
+        android:textSize="43sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/bg_grey"
+        android:padding="16dp"
+        android:src="@drawable/ic_search"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bg_grey"
+        android:padding="16dp"
+        android:src="@drawable/ic_info"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bg_grey"
+        android:padding="16dp"
+        android:src="@drawable/ic_edit_note"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivHideShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/bg_grey"
+        android:padding="16dp"
+        android:src="@drawable/ic_visible"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bg_grey"
+        android:padding="16dp"
+        android:src="@drawable/ic_save"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_252525"
+    android:paddingHorizontal="20dp"
+    tools:context=".home.activity.HomeActivity">
+
+
+    <include
+        layout="@layout/item_header"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/ivBgHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_bg_home" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivBgHome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="@string/create_your_first_note"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <FrameLayout
+        android:id="@+id/flAddNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_circle_shadow">
+
+        <ImageView
+            android:id="@+id/ivCreateNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_create_note" />
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="35dp"
+        android:id="@+id/rvNotes"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_note"
+        android:visibility="gone"
+        />
+
+
+
+</RelativeLayout>
