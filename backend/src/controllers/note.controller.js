@@ -59,7 +59,7 @@ const updateNote = async (req, res, next) => {
     }
 
     res.status(200).json({
-      success: true,l
+      success: true,
       message: "Note Update Succesfully",
       data: note,
     });
