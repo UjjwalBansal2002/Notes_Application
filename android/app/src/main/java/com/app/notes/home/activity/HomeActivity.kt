@@ -45,8 +45,6 @@ class HomeActivity : AppCompatActivity() {
         flAddNote.setOnClickListener {
             startActivity(Intent(this@HomeActivity, CreateNoteActivity::class.java))
         }
-
-
     }
 
     private fun header() {
