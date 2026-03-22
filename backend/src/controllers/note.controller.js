@@ -18,6 +18,7 @@ const createNote = async (req, res, next) => {
 
     res.status(201).json({
       success: true,
+      message: "Note Created Succesfully",
       data: note,
     });
   } catch (error) {
@@ -33,6 +34,7 @@ const getAllNotes = async (req, res, next) => {
 
     res.status(200).json({
       success: true,
+      message: "fetch notes Successfully",
       data: notes,
     });
   } catch (error) {
@@ -58,6 +60,7 @@ const updateNote = async (req, res, next) => {
 
     res.status(200).json({
       success: true,
+      message: "Note Update Succesfully",
       data: note,
     });
   } catch (error) {
